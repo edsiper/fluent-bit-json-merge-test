@@ -1,10 +1,10 @@
-apiVersion: v1                                                                                                                                                                                                     
-kind: Pod                                                                                                                                                                                                          
+apiVersion: v1
+kind: Pod
 metadata:
   name: talk-json-to-me
 spec:
   containers:
-  - image: larskumbier/talk-json-to-me
+  - image: edsiper/fluent-bit-json-merge-test
     imagePullPolicy: Always
     name: talk-json-to-me
     tty: true

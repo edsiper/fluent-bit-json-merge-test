@@ -10,11 +10,10 @@ kubectl create configmap fluentd --from-file fluentd/fluent.conf
 
 kubectl delete --ignore-not-found=true --now=true po fluent-bit
 kubectl delete --ignore-not-found=true --now=true po talk-json-to-me
-kubectl delete --ignore-not-found=true --now=true po talk-other-format
+#kubectl delete --ignore-not-found=true --now=true po talk-other-format
 sleep 15
 
 kubectl create -f fluent-bit/pod.yml
 kubectl create -f talk-json-to-me/pod.yml
-kubectl create -f talk-other-format/pod.yml
+#kubectl create -f talk-other-format/pod.yml
 sleep 5
-
